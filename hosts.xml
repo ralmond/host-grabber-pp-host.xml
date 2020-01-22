@@ -498,4 +498,17 @@
 	<interceptor>replace: '_\d+\.(jpg|png|gif)', '_1280.$1'</interceptor>
 </host>
 
+<!-- RGA addition -->
+<host id="e-hentai">
+  <domain>
+  e-hentai.org
+  </domain>
+  <path-pattern>
+  <![CDATA[s/[0-9a-f]+/.+]]>
+  </path-pattern>
+  <search-pattern>
+  <![CDATA[ID: img]]>
+  </search-pattern>
+</host>
+
 </root>
